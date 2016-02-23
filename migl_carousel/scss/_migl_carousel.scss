@@ -1,0 +1,41 @@
+.flexslider {
+  border: none;
+  ul.slides,
+  ol.flex-control-nav {
+    margin: 0;
+    li {
+      list-style: none;
+    }
+  }
+  .field-name-field-carousel-link {
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: block;
+      font-size: 0;
+    }
+  }
+  .field-name-field-carousel-image-caption {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    background: #FFF;
+    background: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+  }
+  .flex-direction-nav {
+    height: 0;
+    li {
+      list-style: none;
+      a {
+        &:before {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

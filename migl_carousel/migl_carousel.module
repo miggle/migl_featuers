@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * Code for the Carousel feature.
+ */
+
+include_once 'migl_carousel.features.inc';
+
+/**
+ * Implements hook_theme().
+ */
+function migl_carousel_theme($existing, $type, $theme, $path) {
+  $theme = array();
+  $theme['migl_carousel__migl_carousel'] = array(
+    'render element' => 'elements',
+    'base hook' => 'entity',
+    'template' => 'migl_carousel--migl_carousel',
+    'path' => drupal_get_path('module', 'migl_carousel') . '/templates',
+  );
+  $theme['migl_carousel_slide__migl_carousel_slide'] = array(
+    'render element' => 'elements',
+    'base hook' => 'entity',
+    'template' => 'migl_carousel_slide--migl_carousel_slide',
+    'path' => drupal_get_path('module', 'migl_carousel') . '/templates',
+  );
+  return $theme;
+}
